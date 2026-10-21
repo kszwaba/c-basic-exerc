@@ -1,7 +1,6 @@
-//Program to implement call function by value in C programming language.
+// Program demonstrating function call by value in C.
 
 #include <stdio.h>
-#include <stdint.h>
 
 int sum(int x, int y);
 
@@ -11,7 +10,7 @@ int main(){
 
     a = 2;
     b = 3;
-    c = sum(a, b); //Call function sum() by value and passing a and b as arguments to the function sum().
+    c = sum(a, b); // Call sum() with a and b passed by value.
     
     printf("Sum of %d + %d is: %d\n", a, b, c);
 
@@ -24,7 +23,7 @@ int sum(int x, int y){
 
     c = x + y;
 
-    return c; // Functions returns the value of c to the calling function main().
+    return c; // The functions returns the value of c to the calling function main().
 }
 
 /*
